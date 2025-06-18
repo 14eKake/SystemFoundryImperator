@@ -1,0 +1,3 @@
+{"_id":"soldat","name":"Soldat","type":"career","system":{"description":"Carrière militaire"},"folder":null,"sort":0,"flags":{}}
+{"_id":"marchand","name":"Marchand","type":"career","system":{"description":"Carrière commerciale"},"folder":null,"sort":0,"flags":{}}
+{"_id":"erudit","name":"Érudit","type":"career","system":{"description":"Carrière savante"},"folder":null,"sort":0,"flags":{}}

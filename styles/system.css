@@ -12,3 +12,13 @@
 .char-row label, .skill-name {
   flex: 1 0 120px;
 }
+
+.career {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.25em;
+}
+
+.career-name {
+  flex: 1 0 120px;
+}

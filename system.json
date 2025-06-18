@@ -13,6 +13,13 @@
       "path": "packs/competences.db",
       "type": "Item",
       "system": "imperator"
+    },
+    {
+      "name": "carrieres",
+      "label": "Carrières",
+      "path": "packs/carrieres.db",
+      "type": "Item",
+      "system": "imperator"
     }
   ],
   "languages": [
