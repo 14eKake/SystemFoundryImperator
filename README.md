@@ -14,5 +14,6 @@ Ce dépôt contient un exemple minimal de système de jeu **Imperator** pour Fou
 - `styles/system.css` : styles de base.
 - `lang/fr.json` : localisations françaises.
 - `packs/competences.db` : pack d'exemple contenant quelques compétences.
+- `packs/carrieres.db` : exemples de carrières pouvant être glissées sur la fiche.
 
 Ce système propose quatre caractéristiques principales (Corpus, Charisma, Sensus, Spiritus) et un système de jets utilisant des dés à 10 faces (d10).

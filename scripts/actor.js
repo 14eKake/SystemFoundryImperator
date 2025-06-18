@@ -33,6 +33,7 @@ export class ImperatorActorSheet extends ActorSheet {
   getData() {
     const data = super.getData();
     data.system.skills = data.system.skills || {};
+    data.careers = this.actor.items.filter(i => i.type === 'career');
     data.charLabels = {
       corpus: game.i18n.localize('IMPERATOR.Corpus'),
       charisma: game.i18n.localize('IMPERATOR.Charisma'),
@@ -45,6 +46,10 @@ export class ImperatorActorSheet extends ActorSheet {
   activateListeners(html) {
     super.activateListeners(html);
     html.find('button[data-action="roll"]').click(this._onRoll.bind(this));
+    html.find('.item-delete').click(ev => {
+      const li = ev.currentTarget.closest('.item');
+      if (li) this.actor.deleteEmbeddedDocuments('Item', [li.dataset.itemId]);
+    });
   }
 
   _onRoll(event) {
