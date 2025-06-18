@@ -1,0 +1,13 @@
+{
+  "IMPERATOR": {
+    "Characteristics": "Caractéristiques",
+    "Skills": "Compétences",
+    "Roll": "Faire un jet",
+    "RollResult": "Résultat du jet",
+    "HP": "Points de Vie",
+    "Corpus": "Corpus",
+    "Charisma": "Charisme",
+    "Sensus": "Sensus",
+    "Spiritus": "Spiritus"
+  }
+}

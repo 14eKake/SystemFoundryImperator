@@ -1,0 +1,14 @@
+.imperator-sheet {
+  font-family: sans-serif;
+}
+.stats, .skills, .health {
+  margin-bottom: 1em;
+}
+.char-row, .skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.25em;
+}
+.char-row label, .skill-name {
+  flex: 1 0 120px;
+}
