@@ -1,0 +1,4 @@
+{"_id":"acrobat","name":"Acrobaties","type":"Item","system":{"char":"corpus","value":0},"folder":null,"sort":0,"flags":{}}
+{"_id":"persuasion","name":"Persuasion","type":"Item","system":{"char":"charisma","value":0},"folder":null,"sort":0,"flags":{}}
+{"_id":"perception","name":"Perception","type":"Item","system":{"char":"sensus","value":0},"folder":null,"sort":0,"flags":{}}
+{"_id":"erudition","name":"Érudition","type":"Item","system":{"char":"spiritus","value":0},"folder":null,"sort":0,"flags":{}}

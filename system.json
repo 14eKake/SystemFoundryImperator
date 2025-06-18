@@ -1,0 +1,28 @@
+{
+  "name": "imperator",
+  "title": "Imperator",
+  "description": "Systeme de jeu Imperator pour Foundry VTT",
+  "version": "1.0.0",
+  "author": "TonNom",
+  "esmodules": ["scripts/actor.js", "scripts/dice.js"],
+  "styles": ["styles/system.css"],
+  "packs": [
+    {
+      "name": "competences",
+      "label": "Compétences de base",
+      "path": "packs/competences.db",
+      "type": "Item",
+      "system": "imperator"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json"
+    }
+  ],
+  "socket": false,
+  "minimumCoreVersion": "11",
+  "compatibleCoreVersion": "11"
+}

@@ -1,0 +1,30 @@
+<form class="imperator-sheet" autocomplete="off">
+  <header class="sheet-header">
+    <h1><input name="name" type="text" value="{{actor.name}}"/></h1>
+  </header>
+  <section class="stats">
+    <h2 data-localize="IMPERATOR.Characteristics">Caractéristiques</h2>
+    {{#each system.characteristics as |char key|}}
+    <div class="char-row">
+      <label>{{lookup ../charLabels key}}</label>
+      <input type="number" name="system.characteristics.{{key}}" value="{{char}}" min="1" max="5"/>
+    </div>
+    {{/each}}
+  </section>
+  <section class="skills">
+    <h2 data-localize="IMPERATOR.Skills">Compétences</h2>
+    <ul class="skill-list">
+      {{#each system.skills as |skill skey|}}
+      <li class="skill" data-skill="{{skey}}">
+        <span class="skill-name">{{skill.label}}</span>
+        <input type="number" name="system.skills.{{skey}}.value" value="{{skill.value}}" min="0" max="5"/>
+        <button class="roll" data-skill="{{skey}}" type="button" data-action="roll">{{localize 'IMPERATOR.Roll'}}</button>
+      </li>
+      {{/each}}
+    </ul>
+  </section>
+  <section class="health">
+    <label data-localize="IMPERATOR.HP">PV</label>
+    <input type="number" name="system.hp" value="{{system.hp}}" disabled />
+  </section>
+</form>
