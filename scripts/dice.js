@@ -1,6 +1,7 @@
 export async function rollDice(number, target) {
-  const r = new Roll(`${number}d10`).roll({async: false});
-  await r.toMessage();
-  let successes = r.dice[0].results.filter(d => d.result <= target).length;
+  const roll = new Roll(`${number}d10`);
+  await roll.evaluate({async: true});          // évaluation asynchrone
+  await roll.toMessage();                      // envoi dans le chat
+  const successes = roll.dice[0].results.filter(r => r.result <= target).length;
   return successes;
 }
